@@ -1,0 +1,728 @@
+@charset "UTF-8";
+/*لون خلفية الجانب الايمن*/
+/*لون خلفية الجانب الايسر*/
+/*لون خلفية الهيدر و عناوين الاقسام*/
+/*لون الخلفية الحمراء الفاتحة*/
+/*لون الخلفية الحمراء الغامقة*/
+/*لون القاعدة الخاصة بـ الصورة الشخصية*/
+/*لون القاعدة الثانية الخاصة بـ الصورة الشخصية*/
+/*لون الخطوط الموجودة في الهيدر و في خلفية عناوين الاقسام*/
+/*الوان بقية الخطوط الموجودة في التصميم*/
+/*اللون العلوي الخاص بـ المهارات و اللغات*/
+/*اللون السفلي الخاص بـ المهارات و اللغات*/
+/*اللون الخاص بـ الايقونات*/
+/*الخط الاول و الذي يشمل كل الخطوط السميكة*/
+/*الخط الثاني و الذي يشمل النصوص التعريفية*/
+/*التحكم بـ اضافة الصورة الشخصية*/
+/****************************************************************************************************/
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #d3d3d3;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+  
+.responsive {
+  width: 800px;
+  height: 1062px;
+  margin: 20px auto;
+  -webkit-box-shadow: 0 0 33px -4px black;
+  -moz-box-shadow: 0 0 33px -4px black;
+  box-shadow: 0 0 33px -4px black;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/*هيدر السيفي*/
+header {
+  width: 100%;
+  height: 220px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+}
+
+/*الاجزاء المائلة من الهيدر*/
+header .head-top {
+  z-index: 3;
+  width: 859px;
+  height: 261px;
+  background-color: #212b37;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  position: absolute;
+  top: -74px;
+  left: -34px;
+}
+
+header .head-center {
+  z-index: 2;
+  width: 859px;
+  height: 252px;
+  background-color: #ff1f2f;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  position: absolute;
+  top: -56px;
+  left: -34px;
+}
+
+header .head-bottom {
+  z-index: 1;
+  width: 859px;
+  height: 252px;
+  background-color: #ce142b;
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+  position: absolute;
+  top: -43px;
+  left: -34px;
+}
+
+/*نهاية الاجزاء المائلة من الهيدر*/
+/**************************************************/
+/*ديف الاسم و العمل*/
+header .head-words {
+  width: 350px;
+  z-index: 4;
+  background-color: transparent;
+  position: absolute;
+  overflow: hidden;
+  top: 24px;
+  right: 50px;
+}
+
+header .head-words h3 {
+  padding: 0 0 5px 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+  color: #fff;
+}
+
+header .head-words p {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  color: #fff;
+}
+
+/*نهاية ديف الاسم و العمل*/
+/**************************************************/
+/*ديفات الصورة الشخصية*/
+header .head-image {
+  z-index: 4;
+  width: 230px;
+  height: 230px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #ff1f2f;
+  position: absolute;
+  overflow: hidden;
+  top: 14px;
+  left: 67px;
+}
+
+header .head-image .head-background {
+  width: 210px;
+  height: 210px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  overflow: hidden;
+  top: 10px;
+  left: 10px;
+}
+
+header .head-image .head-background .head-this {
+  width: 190px;
+  height: 190px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-image: url("../images/myphoto.jpg");
+  background-repeat: no-repeat;
+  position: absolute;
+  overflow: hidden;
+  top: 10px;
+  left: 10px;
+}
+
+/*نهاية ديفات الصورة الشخصية*/
+/*نهاية هيدر السيفي*/
+/****************************************************************************************************/
+/*محتوى السيفي*/
+section {
+  width: 100%;
+  height: 876px;
+  background-color: transparent;
+  position: absolute;
+  overflow: hidden;
+  top: 186px;
+}
+
+/*الجانب الايسر و الذي يتضمن البروفايل و التواصل و المهارات*/
+section aside {
+  float: left;
+  width: 50%;
+  height: 100%;
+  padding-top: 100px;
+  background-color: #eaebed;
+  overflow: hidden;
+}
+
+/*اختصارات لـ تنسيقات متكررة في الاقسام الثلاثة*/
+/*تنسيق قاعدة الاقسام الثلاثة*/
+section aside .profile, .contact, .skills {
+  width: 100%;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+/*نهاية تنسيق قاعدة الاقسام الثلاثة*/
+/*********************************/
+/*تنسيق الجزء العلوي من الاقسام الثلاثة*/
+section aside .profile .profile-top, .contact .contact-top,
+.skills .skills-top {
+  width: 100%;
+  margin-bottom: 16px;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+/*نهاية تنسيق الجزء العلوي من الاقسام الثلاثة*/
+/*********************************/
+/*تنسيق عناوين الاقسام الثلاثة*/
+section aside .profile .profile-top .title, .contact .contact-top .title, .skills .skills-top .title {
+  width: 200px;
+  height: 46px;
+  padding-top: 7px;
+  background-color: #212b37;
+  overflow: hidden;
+}
+
+section aside .profile .profile-top .title i,
+.contact .contact-top .title i, .skills .skills-top .title i {
+  float: left;
+  padding: 0 16px 0 26px;
+  margin-top: 5px;
+  font-size: 21px;
+  color: #fff;
+}
+
+section aside .profile .profile-top .title h3,
+.contact .contact-top .title h3, .skills .skills-top .title h3 {
+  float: left;
+  padding: 3px 0 0 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  color: #fff;
+}
+
+/*نهاية تنسيق عناوين الاقسام الثلاثة*/
+/*********************************/
+/*تنسيق الجزء السفلي للاقسام الثلاثة*/
+section aside .profile .profile-bottom, .contact .contact-bottom,
+.skills .skills-bottom {
+  width: 100%;
+  padding: 0 26px;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+/*نهاية تنسيق الجزء السفلي للاقسام الثلاثة*/
+/*********************************/
+/*تنسيق النصوص لـ الاقسام الثلاثة*/
+section aside .profile .profile-bottom p, .contact .contact-bottom p,
+.skills .skills-bottom p {
+  padding: 0;
+  margin: 0;
+  color: #262626;
+}
+
+/*نهاية تنسيق النصوص لـ الاقسام الثلاثة*/
+/*نهاية اختصارات لـ تنسيقات متكررة في الاقسام الثلاثة*/
+/****************************************/
+/*القسم الاول = البروفايل*/
+section aside .profile {
+  height: 255px;
+}
+
+/*الجزء السفلي و الذي يتضمن محتوى القسم*/
+section aside .profile .profile-bottom {
+  height: 183px;
+}
+
+section aside .profile .profile-bottom p {
+  line-height: 22px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+}
+
+/*نهاية الجزء السفلي و الذي يتضمن محتوى القسم*/
+/*نهاية القسم الاول = البروفايل*/
+/****************************************/
+/*القسم الثاني = التواصل*/
+section aside .contact {
+  width: 100%;
+  height: 196px;
+  margin-bottom: 3px;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+/*الجزء السفلي و الذي يتضمن محتوى القسم*/
+section aside .contact .contact-bottom {
+  height: 127px;
+}
+
+section aside .contact .contact-bottom ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+section aside .contact .contact-bottom ul li {
+  width: 100%;
+  padding-bottom: 16px;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+section aside .contact .contact-bottom ul li p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+
+/*التحكم بـ تنسيقات الجزء الايسر و الايمن من المععلومات*/
+section aside .contact .contact-bottom ul li .p-left {
+  float: left;
+  width: 79px;
+}
+
+section aside .contact .contact-bottom ul li .p-left p {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+section aside .contact .contact-bottom ul li .p-right {
+  float: right;
+  width: 260px;
+}
+
+section aside .contact .contact-bottom ul li .p-right p {
+  margin-top: -1.5px;
+  font-size: 15px;
+}
+
+/*نهاية التحكم بـ تنسيقات الجزء الايسر و الايمن من المععلومات*/
+/*نهاية الجزء السفلي و الذي يتضمن محتوى القسم*/
+/*نهاية القسم الثاني = التواصل*/
+/****************************************/
+/*القسم الثالث = المهارات*/
+section aside .skills {
+  width: 100%;
+  height: 327px;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+/*الجزء السفلي و الذي يتضمن محتوى القسم*/
+section aside .skills .skills-bottom {
+  height: 264px;
+}
+
+section aside .skills .skills-bottom ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+section aside .skills .skills-bottom ul li {
+  width: 100%;
+  padding-bottom: 16px;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+section aside .skills .skills-bottom ul li p {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+/*تنسيقات الجانب الايمن و الايسر من المهارات*/
+section aside .skills .skills-bottom ul li .skills-name {
+  float: left;
+  width: 117px;
+}
+
+section aside .skills .skills-bottom ul li .skills-line {
+  float: right;
+  width: 216px;
+  height: 8px;
+  margin-top: 5px;
+  border-radius: 100px;
+  background-color: #ff1f2f;
+  overflow: hidden;
+}
+
+section aside .skills .skills-bottom ul li .skills-line .skills-line-this {
+  width: 10%;
+  height: 100%;
+  background-color: #2a0ff7;
+  overflow: hidden;
+}
+
+/*نهاية تنسيقات الجانب الايمن و الايسر من المهارات*/
+/*********************************/
+/*التحكم بـ امتلاء الخط الذي بجانب المهارات*/
+section aside .skills .skills-bottom ul li #line01 {
+  width: 95%;
+}
+
+section aside .skills .skills-bottom ul li #line02 {
+  width: 85%;
+}
+
+section aside .skills .skills-bottom ul li #line03 {
+  width: 14%;
+}
+
+section aside .skills .skills-bottom ul li #line04 {
+  width: 0;
+}
+
+section aside .skills .skills-bottom ul li #line05 {
+  width: 40%;
+}
+
+section aside .skills .skills-bottom ul li #line06 {
+  width: 75%;
+}
+
+section aside .skills .skills-bottom ul li #line07 {
+  width: 5%;
+}
+
+section aside .skills .skills-bottom ul li #line08 {
+  width: 0;
+}
+
+section aside .skills .skills-bottom ul li #line09 {
+  width: 0;
+}
+
+section aside .skills .skills-bottom ul li #line10 {
+  width: 80%;
+}
+
+/*نهاية التحكم بـ امتلاء الخط الذي بجانب المهارات*/
+/*نهاية الجزء السفلي و الذي يتضمن محتوى القسم*/
+/*نهاية القسم الثالث = المهارات*/
+/*نهاية الجانب الايسر و الذي يتضمن البروفايل و التواصل و المهارات*/
+/**************************************************/
+/*الجانب الايمن و الذي يتضمن التعليم و التجربة و الللغات المحكية*/
+article {
+  float: right;
+  width: 50%;
+  height: 100%;
+  padding: 100px 26px 0 26px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+/*تنسيقات القسم الاول و الثاني = التعليم و التجربة*/
+article .education, .experience {
+  width: 100%;
+  padding-bottom: 10px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #e6e6e6;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+/*الجزء العلوي و الذي يتضمن عنوان و ايقونة القسم*/
+article .education .education-top,
+.experience .experience-top {
+  width: 100%;
+  margin-bottom: 15px;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+/*الجزء الايسر و الذي يتضمن الايقونة المعبرة*/
+article .education .education-top .icon-left,
+.experience .experience-top .icon-left {
+  float: left;
+  width: 65px;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+article .education .education-top .icon-left i,
+.experience .experience-top .icon-left i {
+  font-size: 47px;
+  color: #212b37;
+}
+
+/*نهاية الجزء الايسر و الذي يتضمن الايقونة المعبرة*/
+/****************************************/
+/*الجزء الايمن و الذي يتضمن عنوان القسم*/
+article .education .education-top .title-right, .experience .experience-top .title-right {
+  float: right;
+  width: 273px;
+  height: 46px;
+  padding: 7px 0 0 71px;
+  background-color: #212b37;
+  overflow: hidden;
+}
+
+article .education .education-top .title-right h3,
+.experience .experience-top .title-right h3 {
+  padding: 3px 0 0 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  color: #fff;
+}
+
+/*نهاية الجزء الايمن و الذي يتضمن عنوان القسم*/
+/*نهاية الجزء العلوي و الذي يتضمن عنوان و ايقونة القسم*/
+/****************************************/
+/*الجزء السفلي و الذي يتضمن مراحل التعليم و التجربة*/
+article .education .education-bottom, .experience .experience-bottom {
+  width: 100%;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+article .education .education-bottom .history,
+.experience .experience-bottom .history {
+  width: 349px;
+  height: 223px;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+article .education .education-bottom .history .history-parts,
+.experience .experience-bottom .history .history-parts {
+  width: 100%;
+  height: 107px;
+  padding-right: 8px;
+  margin-bottom: 7px;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+article .education .education-bottom .history .history-parts p:first-child,
+.experience .experience-bottom .history .history-parts p:first-child {
+  padding: 0 0 4px 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #262626;
+}
+
+article .education .education-bottom .history .history-parts h3,
+.experience .experience-bottom .history .history-parts h3 {
+  padding: 0 0 2px 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #262626;
+}
+
+article .education .education-bottom .history .history-parts p:last-child,
+.experience .experience-bottom .history .history-parts p:last-child {
+  padding: 0;
+  margin: 0;
+  line-height: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  color: #262626;
+}
+
+/*نهاية الجزء السفلي و الذي يتضمن مراحل التعليم و التجربة*/
+/*نهاية تنسيقات القسم الاول و الثاني = التعليم و التجربة*/
+/****************************************/
+/*القسم الثالث = اللغات المحكية*/
+article .languages {
+  width: 100%;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+/*الجزء العلوي و الذي يتضمن عنوان و ايقونة القسم*/
+article .languages .languages-top {
+  width: 100%;
+  margin-bottom: 15px;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+/*الجزء الايسر و الذي يتضمن الايقونة المعبرة*/
+article .languages .languages-top .icon-left {
+  float: left;
+  width: 65px;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+article .languages .languages-top .icon-left i {
+  font-size: 47px;
+  color: #212b37;
+}
+
+/*نهاية الجزء الايسر و الذي يتضمن الايقونة المعبرة*/
+/****************************************/
+/*الجزء الايمن و الذي يتضمن عنوان القسم*/
+article .languages .languages-top .title-right {
+  float: right;
+  width: 273px;
+  height: 46px;
+  padding: 7px 0 0 69px;
+  background-color: #212b37;
+  overflow: hidden;
+}
+
+article .languages .languages-top .title-right h3 {
+  padding: 3px 0 0 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  color: #fff;
+}
+
+/*نهاية الجزء الايمن و الذي يتضمن عنوان القسم*/
+/*نهاية الجزء العلوي و الذي يتضمن عنوان و ايقونة القسم*/
+/****************************************/
+/*الجزء السفلي و الذي يتضمن محتوى القسم*/
+article .languages .languages-bottom {
+  width: 100%;
+  height: 64px;
+  padding-right: 14px;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+article .languages .languages-bottom ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+article .languages .languages-bottom ul li {
+  width: 100%;
+  padding-bottom: 16px;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+article .languages .languages-bottom ul li p {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #262626;
+}
+
+/*تنسيقات الجانب الايمن و الايسر من اللغات*/
+article .languages .languages-bottom ul li .languages-name {
+  float: left;
+  width: 117px;
+}
+
+article .languages .languages-bottom ul li .languages-line {
+  float: right;
+  width: 216px;
+  height: 8px;
+  margin-top: 5px;
+  border-radius: 100px;
+  background-color: #ff1f2f;
+  overflow: hidden;
+}
+
+article .languages .languages-bottom ul li .languages-line .languages-line-this {
+  width: 10%;
+  height: 100%;
+  background-color: #2a0ff7;;
+  overflow: hidden;
+}
+
+/*نهاية تنسيقات الجانب الايمن و الايسر من اللغات*/
+/*نهاية الجزء السفلي و الذي يتضمن محتوى القسم*/
+/*********************************/
+/*التحكم بـ امتلاء الخط الذي بجانب اللغات*/
+article .languages .languages-bottom ul li #lang01 {
+  width: 70%;
+}
+
+article .languages .languages-bottom ul li #lang02 {
+  width: 42%;
+}
+
+article .languages .languages-bottom ul li #lang03 {
+  width: 2%;
+}
+
+/*نهاية التحكم بـ امتلاء الخط الذي بجانب اللغات*/
+/*نهاية القسم الثالث = اللغات المحكية*/
+/*نهاية الجانب الايمن و الذي يتضمن التعليم و التجربة و الللغات المحكية*/
+/*نهاية محتوى السيفي*/
+/****************************************************************************************************/
+header .head-image .head-background .head-this {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+section aside .profile .profile-top .title, .contact .contact-top .title, .skills .skills-top .title {
+  -webkit-border-radius: 0 36px 36px 0;
+  -moz-border-radius: 0 36px 36px 0;
+  border-radius: 0 36px 36px 0;
+}
+
+article .education .education-top .title-right, .experience .experience-top .title-right, article .languages .languages-top .title-right {
+  -webkit-border-radius: 36px;
+  -moz-border-radius: 36px;
+  border-radius: 36px;
+}
